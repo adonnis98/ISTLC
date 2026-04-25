@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    
+    <h1>Registro de Usuarios</h1>
+
+    <form action="post">
+        <fieldset>
+            <legend>Registro de Usuarios</legend>
+
+            <label for="nombre">Nombre:</label> <input value="Adonis" placeholder="Escriba aqui su nombre" name="nombre" id="nombre" type="text" required maxlength="24" minlength="3">
+            <br>
+            <label for="apellido">Apellido:</label> <input value="Pluas" placeholder="Escriba aqui su apellido" name="apellido" id="apellido" type="text" required maxlength="24" minlength="3">
+            <br>
+            <label for="edad">Edad:</label> <input step="2" type="number" name="edad" id="edad" min="0" max="90" >
+            <br>
+            <label for="">Fecha de Nacimiento:</label> <input type="date" >
+            <label for="">Hora de Naciemiento</label> <input type="time">
+            <br>
+            <label for="">Sexo:</label> <br>
+            <label for="">Masculino</label> <input name="sexo" type="radio">
+            <label for="">Femenino</label> <input name="sexo" type="radio">
+            <br>
+            <label for="">Color Favorito:</label> <input type="color">
+            <br>
+            <label for="">Musica Favorita:</label>
+            <label for="">Jazz</label> <input type="checkbox">
+            <label for="">Salsa Romantica</label> <input type="checkbox">
+            <label for="">Bolero</label> <input type="checkbox">
+            <br>
+            <label for="">Email</label> <input type="email">
+            <br>
+            <label for="">Importa tu Foto</label> <input type="file" accept=".jpg">
+            <br>
+            <input type="hidden">
+            <br>
+            <label for="">Contraseña:</label> <input type="password">
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
