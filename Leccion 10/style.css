@@ -1,0 +1,102 @@
+.coloresPasteles {
+    background-color: darkorange;
+    padding: 20px;
+    border-radius: 200px;
+    
+}
+
+.coloresOscuros {
+    background-color: rgba(42, 2, 85, 0.466);
+    padding: 20px;
+    border-radius: 200px;
+
+}
+
+.coloresElectricos {
+    background-color: #f40cf4 ;
+    padding: 20px;
+    border-radius: 200px;
+}
+
+.coloresNeon {
+    background-color: #39ff14 ;
+    padding: 20px;
+    border-radius: 200px;
+}
+
+.coloresFuertes{
+    background-color: blue;
+    padding: 20px;
+    border-radius: 200px;
+}
+
+.letraAmarillo {
+    color: darkcyan;
+}
+
+.bordesSolidos {
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+    padding: 20px;
+    border-radius: 200px;
+    /* border: 10px solid red; es una forma mas corta de escribirlo */
+    padding: 60px;
+    margin: 50px;
+}
+
+.bordeDashed {
+    border: 10px dashed red;
+    padding: 20px;
+    border-radius: 200px;
+}
+
+.bordeDotted {
+    border: 10px dotted blue;
+    padding: 20px;
+    border-radius: 200px;
+}
+
+.bordeDouble {
+    border: 10px double green;
+    padding: 20px;
+    border-radius: 200px;
+
+    margin: 50px 10px 25px 30px;
+    /* el primer valor es para el margen superior, el segundo para el margen derecho, el tercero para el margen inferior y el cuarto para el margen izquierdo */
+    /*margin-top: 50px; es para el margen superior solamente, margin-right: 10px; es para el margen derecho, margin-bottom: 25px; es para el margen inferior, margin-left: 30px; es para el margen izquierdo */
+
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    /* o se puede hacer directamente con padding: 30px 50px 100px 20px; el primer valor es para el padding superior, el segundo para el padding derecho, el tercero para el padding inferior y el cuarto para el padding izquierdo */
+
+}
+
+.bordesRadius {
+    border: 10px double black;
+    padding: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    /* Border-top-right-radius: 50px; es para redondear el borde superior derecho, border-bottom-left-radius: 50px; es para redondear el borde inferior izquierdo */
+    border-bottom-color: red;
+    border-top-color: yellow;
+    border-right-color: blue;
+    border-left-color: brown;
+}   
+
+.nuevaLetra {    
+font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: purple;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}

@@ -1,0 +1,44 @@
+/* el asterisco es un selector universal, se aplica a todos los elementos del documento */
+* {
+    font-size: 32px;
+}
+span {
+            color: blue;
+            background-color: rgb(245, 111, 111);
+            font-size: 25px;
+        }
+h1 {
+            color: red;
+            background-color: rgb(211, 245, 111);
+            font-size: 25px;
+        }
+/* el # es un selector de ID, se aplica a un elemento específico que tenga el atributo id con el valor indicado */
+#TituloTres {
+            background-color: violet;
+            font-size: 25px;
+        }
+.claseParrafo {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+h2, h3, h4, #TituloTres{
+            color: rgb(111, 245, 111);
+            background-color: rgb(101, 14, 240);
+            font-size: 25px;
+        }   
+/*SUBCLASE*/        
+.claseEspecial p{
+            background-color: slategrey;
+            font-size: 25px;
+        }        
+
+
+
+
+
+
+
+
+
+
+
