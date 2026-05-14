@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 25px 80px;
+    text-align: center;
+}
+/*bordes*/
+.item {
+    width: 100%;
+    border: 2px solid rgba(128, 128, 128, 0.192);
+    border-radius: 15px;
+    padding: 15px; 
+}
+/*imagenes y videos*/
+img 
+{
+    width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+img:hover
+{
+    transform: scale(1.1);
+    border-color: 200px solid rgba(255, 0, 0, 0.477);
+}
+video
+{
+    width: 100%;
+    border-radius: 15px;
+    margin: 25px 80px;
+}
+/*Titulos Principales*/
+h1
+{
+    border-left: 5px solid red;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+/*Titulos Secundarios*/
+h2
+{
+    text-shadow: 25px 25px 25px black;
+}
+h1, h2
+{
+    font-family: 'Nunito Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100, 'wght' 800;
+    text-shadow: none;
+
+}
+
+.menuLogo
+{
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+    color:red;  
+    text-align:center; 
+    font-size: 4rem; 
+    border: 10px solid red;
+    padding: 10px;
+    border-radius: 70px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100, 'wght' 800;
+}
+/*Parrafos*/
+p
+{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*Color de los titulos secundarios*/
+h2:hover
+{
+    color: red;
+    cursor: pointer;
+}
+
+nav {
+    background-color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+}
+nav li {
+    display: inline-block;
+    padding: 15px;
+    list-style: none; /* Quita los puntos solo en el menú */
+}
+nav li:hover {
+    background-color: rgb(196, 196, 196);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+a:hover
+{
+    color: red;
+}
+
+footer
+{
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+}
+
+/* realizar de tarea ingresar al sitio con la noticia*/

@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img 
+{
+    display: block;
+    width: 55%;
+    margin-left: 20%;
+    padding: 15px;
+    border-radius: 20px;
+}
+video
+{
+    width: 75%;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+dd
+{
+    text-align: none    ;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+h1
+{
+    border-left: 5px solid red;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+h2
+{
+    border-left: 5px solid red;
+    padding-left: 10px;
+    margin-left: 20px;
+    
+}
+nav {
+    background-color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+}
+nav li {
+    display: inline-block;
+    padding: 15px;
+    list-style: none; /* Quita los puntos solo en el menú */
+}
+nav li:hover {
+    background-color: rgb(196, 196, 196);
+    cursor: pointer;
+    border-radius: 15px;
+}   
+
+.container ul {
+    margin-left: 100px; /* Empuja la lista a la derecha para que se vean los puntos */
+    margin-bottom: 20px;
+}
+.container li {
+    display: list-item; /* Asegura que se comporten como lista y no como botones */
+    list-style-type: disc; /* Fuerza a que salgan los puntitos */
+    padding: 5px 0;
+}
+
+.menuLogo
+{
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+    color:red;  
+    text-align:center; 
+    font-size: 4rem; 
+    border: 10px solid red;
+    padding: 10px;
+    border-radius: 70px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100, 'wght' 800;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
+a:hover
+{
+    color: black;
+}
+
+footer
+{
+    margin-top: 50px;
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+}
+
+/* realizar de tarea ingresar al sitio con la noticia*/
