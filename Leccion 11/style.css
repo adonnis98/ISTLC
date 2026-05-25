@@ -1,0 +1,43 @@
+h1, h2, p   
+{
+    color: white;
+
+}
+
+body
+{
+    background-image: url('LunaHD.jpg'), url('Montaña.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-attachment: fixed, fixed; /*fixed sirve para que la imagen no se mueva al scrollear*/
+    background-position: center, right top;
+    background-size: 50%, cover;
+}
+/*
+body
+{
+    background: linear-gradient(135deg, red, blue);
+}*/
+
+html, body
+{
+    height: 100%;
+}
+
+p
+{
+    text-shadow: 5px 5px 5px #000000;
+    letter-spacing: 10px;
+    word-spacing: 1px;
+    text-indent: 30px;
+    line-height: 3;
+    white-space: nowrap;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+

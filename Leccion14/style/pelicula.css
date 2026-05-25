@@ -1,0 +1,61 @@
+.cartelera {
+    margin-top: 25px;
+    margin-bottom: 5%;
+    font-weight: bold;
+    color: #212529;
+}
+
+.espaciadoFilas {
+    margin-bottom: 30px;
+}  
+
+.container .row img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.container .row img:hover {
+    transform: scale(1.03);
+}
+
+#carouselExampleSlidesOnly {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#carouselExampleSlidesOnly .carousel-inner img {
+    transition: transform 0.5s ease-in-out;
+}
+
+#carouselExampleSlidesOnly .carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    transition: all 0.3s ease;
+    border: none; 
+}
+
+#carouselExampleSlidesOnly .carousel-indicators button.active {
+    background-color: #fff;
+    width: 14px;
+    height: 14px;
+}
+
+
+@media (max-width: 576px) {
+    #carouselExampleSlidesOnly .carousel-inner,
+    #carouselExampleSlidesOnly .carousel-inner img {
+        height: 250px !important;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    #carouselExampleSlidesOnly .carousel-inner,
+    #carouselExampleSlidesOnly .carousel-inner img {
+        height: 320px !important;
+        object-fit: cover;
+    }
+}

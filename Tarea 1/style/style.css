@@ -1,0 +1,36 @@
+.cartelera {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(220, 53, 69, 0.5); 
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 20px rgba(220, 53, 69, 0.3) !important; 
+    cursor: pointer;
+}
+
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+#carouselExample{
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#videoContainer {
+    border-radius: 20px;
+    overflow: hidden;
+}

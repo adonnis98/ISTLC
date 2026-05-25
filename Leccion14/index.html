@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style/pelicula.css" />
+</head>
+
+<body>
+     <!--#region Menu de navegación-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">SuperLiceoCristiano</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar película..."
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--#endregion-->
+
+    <h1 class="text-center cartelera my-4">Películas en Cartelera</h1>
+    <div id="carouselExampleSlidesOnly" class="carousel slide container mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="image/LOGOTORTUGA.jpg" class="d-block w-100" alt="Tortugas Ninja"
+                    style="height: 400px; object-fit: cover; object-position: center;">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="image/LOGOCABALLO.png" class="d-block w-100" alt="Spirit"
+                    style="height: 400px; object-fit: cover; object-position: center;">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="image/LOGODRAGON.jpg" class="d-block w-100" alt="Cómo entrenar a tu dragón"
+                    style="height: 400px; object-fit: cover; object-position: center;">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="image/LOGOSMOKING.jpg" class="d-block w-100" alt="El Smoking"
+                    style="height: 400px; object-fit: cover; object-position: center;">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="image/LOGODEPREDADOR.png" class="d-block w-100" alt="Depredador"
+                    style="height: 400px; object-fit: cover; object-position: center;">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="image/LOGOVENGA.jpg" class="d-block w-100" alt="Los Vengadores"
+                    style="height: 400px; object-fit: cover; object-position: center;">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="image/LOGOHARRY.jpg" class="d-block w-100" alt="Harry Potter"
+                    style="height: 400px; object-fit: cover; object-position: center;">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="image/LOGOGUARDIANES.jpg" class="d-block w-100" alt="Guardianes de la Galaxia"
+                    style="height: 400px; object-fit: cover; object-position: center;">
+            </div>
+        </div>
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <div class="container text-center mb-4">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2 class="fs-4 mb-3 d-flex align-items-center justify-content-center" style="min-height: 60px;">
+                        Guardianes de la Galaxia</h2>
+                    <div class="mb-3">
+                        <img src="image/Guardianes-de-la-Galaxia.jpg" alt="Guardianes de la Galaxia"
+                            class="img-fluid rounded" style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <a href="resumen/guardianesGalaxia.html" class="btn btn-primary w-100">Ver Película</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2 class="fs-4 mb-3 d-flex align-items-center justify-content-center" style="min-height: 60px;">
+                        Harry Potter</h2>
+                    <div class="mb-3">
+                        <img src="image/Harry-Potter.jpg" alt="Harry Potter" class="img-fluid rounded"
+                            style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <a href="resumen/harryPotter.html" class="btn btn-primary w-100">Ver Película</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2 class="fs-4 mb-3 d-flex align-items-center justify-content-center" style="min-height: 60px;">Los
+                        Vengadores</h2>
+                    <div class="mb-3">
+                        <img src="image/Los-Vengadores.jpg" alt="Los Vengadores" class="img-fluid rounded"
+                            style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <a href="resumen/losVengadores.html" class="btn btn-primary w-100">Ver Película</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2 class="fs-4 mb-3 d-flex align-items-center justify-content-center" style="min-height: 60px;">
+                        Depredador</h2>
+                    <div class="mb-3">
+                        <img src="image/Depredador.jpg" alt="Depredador" class="img-fluid rounded"
+                            style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <a href="resumen/depredador.html" class="btn btn-primary w-100">Ver Película</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mb-5">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2 class="fs-4 mb-3 d-flex align-items-center justify-content-center" style="min-height: 60px;">El
+                        Smoking</h2>
+                    <div class="mb-3">
+                        <img src="image/Smoking.jpg" alt="El Smoking" class="img-fluid rounded"
+                            style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <a href="resumen/elSmoking.html" class="btn btn-primary w-100">Ver Película</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2 class="fs-4 mb-3 d-flex align-items-center justify-content-center" style="min-height: 60px;">
+                        Cómo entrenar a tu dragón</h2>
+                    <div class="mb-3">
+                        <img src="image/Dragon.jpg" alt="Como entrenar a tu dragon" class="img-fluid rounded"
+                            style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <a href="resumen/entrenarDragon.html" class="btn btn-primary w-100">Ver Película</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2 class="fs-4 mb-3 d-flex align-items-center justify-content-center" style="min-height: 60px;">
+                        Spirit</h2>
+                    <div class="mb-3">
+                        <img src="image/Spirit.jpg" alt="Spirit" class="img-fluid rounded"
+                            style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <a href="resumen/Spirit.html" class="btn btn-primary w-100">Ver Película</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <h2 class="fs-4 mb-3 d-flex align-items-center justify-content-center" style="min-height: 60px;">
+                        Tortugas Ninja</h2>
+                    <div class="mb-3">
+                        <img src="image/tortugasNinjas.jpg" alt="Tortugas Ninja" class="img-fluid rounded"
+                            style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <a href="resumen/tortugasNinjas.html" class="btn btn-primary w-100">Ver Película</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
