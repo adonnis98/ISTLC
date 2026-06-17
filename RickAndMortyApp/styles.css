@@ -1,0 +1,108 @@
+/* Fuente personalizada de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+/* ── ESTILOS GENERALES Aplican a toda la página */
+body {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b4f72 50%, #0d1b2a 100%);
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ENCABEZADO Barra superior con el logo y el subtítulo */
+header {
+  background: rgba(0, 0, 0, 0.45);
+  border-bottom: 3px solid #5fdd9d; 
+  backdrop-filter: blur(6px);  
+}
+
+.logo {
+  width: clamp(180px, 35vw, 320px); 
+   /* brillo verde alrededor del logo */
+  filter: drop-shadow(0 0 18px #5fdd9d);
+}
+
+.subtitle {
+  color: #a8d8ea;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.card {
+  background: linear-gradient(180deg, #112240 0%, #0a192f 100%);
+  border: 1px solid rgba(95, 221, 157, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  color: #ccd6f6;
+  height: 100%;
+}
+
+/* Efecto al pasar el mouse sobre una tarjeta */
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(95, 221, 157, 0.35);
+  border-color: #5fdd9d;
+}
+
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+  border-bottom: 2px solid rgba(95, 221, 157, 0.2);
+}
+
+/* ── Cuerpo de la tarjeta aquí van el nombre, estado, especie y género */
+.card-body {
+  padding: 0.9rem 1rem;
+}
+
+.card-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #5fdd9d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.6rem;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  margin: 0.18rem 0;
+  color: #a8b2d8;
+}
+.card-text .label {
+  color: #ccd6f6;
+  font-weight: 600;
+}
+
+/* BADGE DE ESTADO */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+.status-badge .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* personaje vivo */
+.status-vivo { background: rgba(95, 221, 157, 0.15); color: #5fdd9d; }
+.status-vivo .dot { background: #5fdd9d; box-shadow: 0 0 6px #5fdd9d; }
+
+/* personaje muerto */
+.status-muerto { background: rgba(231, 76, 60, 0.15); color: #e74c3c; }
+.status-muerto .dot { background: #e74c3c; }
+
+/* estado desconocido */
+.status-desconocido { background: rgba(170, 170, 170, 0.15); color: #aaa; }
+.status-desconocido .dot { background: #aaa; }
