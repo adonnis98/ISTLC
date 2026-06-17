@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Ajustes del Carrusel */
+.carousel-item {
+    height: 75vh;
+    min-height: 450px;
+    background-position: center;
+    background-size: cover;     
+    background-repeat: no-repeat;
+}
+
+.item-banner-1 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('../Image/carrusel1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    min-height: 450px;
+}
+
+.item-banner-2 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('../Image/carrusel2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    min-height: 450px;
+}
+
+.item-banner-3 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('../Image/carrusel3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    min-height: 450px;
+}
+
+/* Estilo para los botones */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+
+
+/*  Estilos para las Tarjetas de Mascotas */
+
+/* La tarjeta completa */
+.tarjeta-mascota {
+    border-radius: 20px !important;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+/* La tarjeta se elevara elegantemente */
+.tarjeta-mascota:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Contenedor de la foto para recortar el zoom */
+.contenedor-foto {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* La imagen de la mascota */
+.img-mascota {
+    height: 250px;
+    object-fit: cover; /* Evita que se deforme o estire */
+    transition: transform 0.5s ease;
+}
+
+/* Efecto ZOOM*/
+.tarjeta-mascota:hover .img-mascota {
+    transform: scale(1.08);
+}
+
+/* Limita el texto a 2 líneas para mantener la simetría visual */
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;          
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Color personalizado suave para el badge */
+.bg-success-subtle {
+    background-color: #e8f5e9 !important;
+}
+
+
+
+/* Estilos para la Sección de Servicios*/
+
+/* Caja contenedora del servicio */
+.tarjeta-servicio {
+    background-color: #f8f9fa;
+    border: 1px solid #eef0f2;
+    transition: all 0.3s ease;
+}
+
+/* Efecto Hover: Fondo blanco, sombra sutil y se eleva un poquito */
+.tarjeta-servicio:hover {
+    background-color: #ffffff;
+    border-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* El círculo del ícono */
+.icono-servicio {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto divertido: El ícono gira levemente si pasas el mouse por encima */
+.tarjeta-servicio:hover .icono-servicio {
+    transform: rotate(15px) scale(1.05);
+}
+
+/*Estilos para el Pet Shop*/
+
+/* Tarjeta contenedora */
+.tarjeta-producto {
+    background-color: #ffffff !important;
+    border-radius: 15px !important;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Caja gris interna para contener la foto limpia */
+.contenedor-img-producto {
+    height: 200px;
+    background-color: #fdfdfd;
+    border: 1px solid #f1f3f5;
+}
+
+/* Ajuste para que cualquier foto se mantenga contenida y centrada sin deformarse */
+.objeto-contain {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Boton carrito*/
+.btn-agregar-carrito {
+    border-radius: 8px !important; 
+    font-size: 0.9rem;
+}
+
+/*Testimonios y Footer */
+.italic {
+    font-style: italic;
+}
+
+footer a {
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #198754 !important; 
+}
+
+/* Iconos del menu */
+.menu-iconos a {
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.menu-iconos a:hover {
+    color: #198754 !important;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* PANTALLA DE LOGGING Y REGISTRO*/
+
+.nav-pills .nav-link.active {
+    background-color: #198754 !important;
+    color: #ffffff !important;
+}
+.nav-pills .nav-link {
+    color: #6c757d;
+}
+
+/*PÁGINA INSTITUCIONAL: NOSOTROS*/
+
+.class-cabecera-nosotros {
+    background: linear-gradient(rgba(25, 135, 84, 0.85), rgba(25, 135, 84, 0.95)),
+                url('../Image/carrusel1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ACORDEÓN DE IMÁGENES INTERACTIVO (NOSOTROS)*/
+.contenedor-acordeon-imagenes {
+    height: 400px;
+}
+.tarjeta-expansiva {
+    flex: 1;
+    height: 100%;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    cursor: pointer;
+}
+
+/* Asegura que la imagen mantenga su proporción */
+.tarjeta-expansiva img {
+    object-fit: cover;
+    object-position: center;
+}
+
+ /* Apartado Nosotros */
+.tarjeta-expansiva:hover {
+    flex: 3;
+}
+.capa-informacion {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.968)) !important;
+    transition: opacity 0.3s ease;
+}
+ /*Opacacidad de las letras de la tarjeta*/
+.tarjeta-expansiva p {
+    opacity: 1;
+}
+
+/* PÁGINA DE SERVICIOS*/
+
+.class-cabecera-servicios {
+    background: linear-gradient(rgba(25, 135, 84, 0.88), rgba(25, 135, 84, 0.96)),
+                url('../Image/servicios.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-servicio-detallado:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+.btn-reserva-servicios:hover {
+    transform: scale(1.03);
+    background-color: #f8f9fa;
+}
+
+/* PÁGINA DE ADOPCIONES*/
+
+.class-cabecera-adopcion {
+    background: linear-gradient(rgba(25, 135, 84, 0.88), rgba(25, 135, 84, 0.96)),
+                url('../Image/carrusel2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/*  PÁGINA DE PET SHOP */
+
+.class-cabecera-tienda {
+    background: linear-gradient(rgba(25, 135, 84, 0.88), rgba(25, 135, 84, 0.96)),
+                url('../Image/carrusel1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+
+
+
+
+.form-label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+.form-control:focus, .form-select:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Felices - Servicios Médicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success fs-4 d-flex align-items-center gap-2" href="index.html">
+                <i class="bi bi-heart-pulse-fill text-success fs-3"></i>
+                <span class="text-dark">Huellitas <span class="text-success">Felices</span></span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item"><a class="nav-link text-muted" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-success active" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="adopcion.html">Adóptanos</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="petshop.html">Pet Shop</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-4 menu-iconos">
+                    <a href="#" id="btn-buscar-navbar" class="text-dark fs-5"><i class="bi bi-search"></i></a>
+                    <a href="#" id="btnNavAuth" data-bs-toggle="modal" data-bs-target="#modalAuth" class="text-dark fs-5"><i
+                            class="bi bi-person-circle"></i></a>
+                    <a href="petshop.html" class="text-dark fs-5 position-relative">
+                        <i class="bi bi-bag-heart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="font-size: 0.6rem;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 bg-success text-white text-center position-relative class-cabecera-servicios">
+        <div class="container py-4">
+            <span
+                class="badge bg-white text-success px-3 py-2 rounded-pill fw-bold mb-2 text-uppercase">Especialidades</span>
+            <h1 class="display-4 fw-bold">Cuidado Clínico Profesional</h1>
+            <p class="lead text-white-50 max-w-2xl mx-auto">Equipamiento de vanguardia y especialistas apasionados para
+                garantizar el bienestar de tu consentido.</p>
+        </div>
+    </header>
+
+    <section class="py-5 bg-white">
+        <div class="container py-3">
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                        class="card border-0 bg-light rounded-4 p-4 h-100 text-center shadow-sm card-servicio-detallado d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="icon-shape bg-success bg-opacity-10 text-success mx-auto rounded-circle d-flex align-items-center justify-content-center mb-3 fs-3"
+                                style="width: 70px; height: 70px;">
+                                <i class="bi bi-chat-heart-fill"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-2">Consulta Médica</h5>
+                            <p class="small text-muted mb-3">Chequeos preventivos integrales, diagnóstico clínico
+                                preciso y recetas personalizadas para control diario.</p>
+                        </div>
+                        <div class="mt-3">
+                            <span
+                                class="badge bg-white text-success border border-success-subtle py-2 px-3 rounded-pill fw-bold mb-3 d-inline-block">Desde
+                                $15.00</span>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#modalConsulta"
+                                class="btn btn-success btn-sm w-100 rounded-3 py-2 fw-semibold shadow-sm">Reservar
+                                Consulta</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                        class="card border-0 bg-light rounded-4 p-4 h-100 text-center shadow-sm card-servicio-detallado d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="icon-shape bg-danger bg-opacity-10 text-danger mx-auto rounded-circle d-flex align-items-center justify-content-center mb-3 fs-3"
+                                style="width: 70px; height: 70px;">
+                                <i class="bi bi-heart-pulse-fill"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-2">Cirugía Veterinaria</h5>
+                            <p class="small text-muted mb-3">Quirófano completamente esterilizado, monitoreo de signos
+                                vitales constante y procedimientos quirúrgicos seguros.</p>
+                        </div>
+                        <div class="mt-3">
+                            <span
+                                class="badge bg-white text-danger border border-danger-subtle py-2 px-3 rounded-pill fw-bold mb-3 d-inline-block">Desde
+                                $85.00</span>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#modalCirugia"
+                                class="btn btn-danger btn-sm w-100 rounded-3 py-2 fw-semibold shadow-sm">Agendar
+                                Cirugía</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                        class="card border-0 bg-light rounded-4 p-4 h-100 text-center shadow-sm card-servicio-detallado d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="icon-shape bg-info bg-opacity-10 text-info mx-auto rounded-circle d-flex align-items-center justify-content-center mb-3 fs-3"
+                                style="width: 70px; height: 70px;">
+                                <i class="bi bi-flask-fill"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-2">Laboratorio Clínico</h5>
+                            <p class="small text-muted mb-3">Exámenes de sangre urgentes, ecografías avanzadas,
+                                radiografías y resultados digitales rápidos en emergencias.</p>
+                        </div>
+                        <div class="mt-3">
+                            <span
+                                class="badge bg-white text-info border border-info-subtle py-2 px-3 rounded-pill fw-bold mb-3 d-inline-block">Desde
+                                $20.00</span>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#modalLaboratorio"
+                                class="btn btn-info text-white btn-sm w-100 rounded-3 py-2 fw-semibold shadow-sm">Solicitar
+                                Examen</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                        class="card border-0 bg-light rounded-4 p-4 h-100 text-center shadow-sm card-servicio-detallado d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="icon-shape bg-warning bg-opacity-10 text-warning mx-auto rounded-circle d-flex align-items-center justify-content-center mb-3 fs-3"
+                                style="width: 70px; height: 70px;">
+                                <i class="bi bi-scissors"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-2">Peluquería y Spa</h5>
+                            <p class="small text-muted mb-3">Baños medicados antiparasitarios, corte de pelo según la
+                                raza, limpieza profunda de oídos y corte de uñas con amor.</p>
+                        </div>
+                        <div class="mt-3">
+                            <span
+                                class="badge bg-white text-warning border border-warning-subtle py-2 px-3 rounded-pill fw-bold mb-3 d-inline-block">Desde
+                                $12.00</span>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#modalPeluqueria"
+                                class="btn btn-warning text-white btn-sm w-100 rounded-3 py-2 fw-semibold shadow-sm">Apartar
+                                Turno</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light border-top">
+        <div class="container py-3">
+            <div
+                class="p-4 p-md-5 bg-success rounded-4 text-white text-center shadow position-relative overflow-hidden">
+                <div class="position-relative z-1 max-w-xl mx-auto">
+                    <h2 class="fw-bold mb-3">¿Tu mascota necesita atención médica?</h2>
+                    <p class="text-white-50 mb-4">Recuerda que para garantizar su cupo sin filas ni esperas debes
+                        reservar una cita con anticipación desde nuestra plataforma.</p>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#modalConsulta"
+                        class="btn btn-white bg-white text-success fw-bold px-4 py-3 rounded-3 shadow-sm transition-transform btn-reserva-servicios">
+                        <i class="bi bi-calendar2-check-fill me-2"></i> Agendar Cita Médica
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalConsulta" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header bg-success text-white rounded-top-4 py-3">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-chat-heart-fill me-2"></i>Nueva Consulta Médica</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="alert alert-warning border-0 shadow-sm d-flex align-items-center gap-2 mb-3 py-2 px-3 rounded-3"
+                            style="font-size: 0.85rem;">
+                            <i class="bi bi-lock-fill text-warning fs-5"></i>
+                            <span class="text-dark-emphasis fw-medium">Se requiere una cuenta activa para procesar citas
+                                médicas.</span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-dark">Nombre de la Mascota</label>
+                            <input type="text" id="petNameConsulta" class="form-control bg-light border"
+                                placeholder="Ej. Toby" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-dark">Especie / Raza</label>
+                            <select class="form-select bg-light border">
+                                <option>Canino (Perro)</option>
+                                <option>Felino (Gato)</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-dark">Motivo de la Consulta</label>
+                            <textarea class="form-control bg-light border" rows="3"
+                                placeholder="Describe brevemente los síntomas de tu peludito..."></textarea>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Selecciona el día</label>
+                                <input type="date" class="form-control bg-light border appointment-date" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Selecciona la hora</label>
+                                <select class="form-select bg-light border" required>
+                                    <option value="" disabled selected>Horarios disponibles</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:30">10:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:30">03:30 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit"
+                            class="btn btn-success w-100 py-2 fw-bold rounded-3 mt-2 shadow-sm">
+                            <i class="bi bi-calendar-check me-1"></i> Confirmar Reserva de Consulta
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCirugia" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header bg-danger text-white rounded-top-4 py-3">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-heart-pulse-fill me-2"></i>Agenda Quirúrgica</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="alert alert-warning border-0 shadow-sm d-flex align-items-center gap-2 mb-3 py-2 px-3 rounded-3"
+                            style="font-size: 0.85rem;">
+                            <i class="bi bi-lock-fill text-warning fs-5"></i>
+                            <span class="text-dark-emphasis fw-medium">Se requiere una cuenta activa para procesar citas
+                                médicas.</span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-dark">Mascota Paciente</label>
+                            <input type="text" id="petNameCirugia" class="form-control bg-light border"
+                                placeholder="Nombre del animalito" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-dark">Tipo de Procedimiento</label>
+                            <select class="form-select bg-light border">
+                                <option>Esterilización / Castración</option>
+                                <option>Cirugía de Tejidos Blandos</option>
+                                <option>Traumatología / Ortopedia</option>
+                            </select>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Selecciona el día</label>
+                                <input type="date" class="form-control bg-light border appointment-date" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Selecciona la hora</label>
+                                <select class="form-select bg-light border" required>
+                                    <option value="" disabled selected>Horarios disponibles</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:30">10:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:30">03:30 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 bg-danger-subtle p-3 rounded-3 text-danger-emphasis small border border-danger-subtle"
+                            style="font-size: 0.8rem;">
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i><strong>Nota importante:</strong> Toda
+                            intervención requiere ayuno estricto de 8 horas previas al ingreso clínico.
+                        </div>
+                        <button type="submit"
+                            class="btn btn-danger w-100 py-2 fw-bold rounded-3 mt-2 shadow-sm">
+                            <i class="bi bi-calendar-check me-1"></i> Confirmar Agenda Quirúrgica
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLaboratorio" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header bg-info text-white rounded-top-4 py-3">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-flask-fill me-2"></i>Orden de Exámenes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="alert alert-warning border-0 shadow-sm d-flex align-items-center gap-2 mb-3 py-2 px-3 rounded-3"
+                            style="font-size: 0.85rem;">
+                            <i class="bi bi-lock-fill text-warning fs-5"></i>
+                            <span class="text-dark-emphasis fw-medium">Se requiere una cuenta activa para procesar citas
+                                médicas.</span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-dark">Nombre de la Mascota</label>
+                            <input type="text" id="petNameLaboratorio" class="form-control bg-light border"
+                                placeholder="Ej. Luna" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-dark">Análisis Solicitado</label>
+                            <select class="form-select bg-light border">
+                                <option>Hemograma Completo (Sangre)</option>
+                                <option>Perfil Bioquímico Renal/Hepático</option>
+                                <option>Ecografía / Radiografía Digital</option>
+                            </select>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Selecciona el día</label>
+                                <input type="date" class="form-control bg-light border appointment-date" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Selecciona la hora</label>
+                                <select class="form-select bg-light border" required>
+                                    <option value="" disabled selected>Horarios disponibles</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:30">10:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:30">03:30 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit"
+                            class="btn btn-info text-white w-100 py-2 fw-bold rounded-3 mt-2 shadow-sm">
+                            <i class="bi bi-calendar-check me-1"></i> Confirmar Solicitud de Examen
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPeluqueria" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header bg-warning text-white rounded-top-4 py-3">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-scissors me-2"></i>Reserva en Spa Canino</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="alert alert-warning border-0 shadow-sm d-flex align-items-center gap-2 mb-3 py-2 px-3 rounded-3"
+                            style="font-size: 0.85rem;">
+                            <i class="bi bi-lock-fill text-warning fs-5"></i>
+                            <span class="text-dark-emphasis fw-medium">Se requiere una cuenta activa para procesar citas
+                                médicas.</span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-dark">Nombre del Consentido</label>
+                            <input type="text" id="petNamePeluqueria" class="form-control bg-light border"
+                                placeholder="Ej. Rocco" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-dark">Servicio de Estética</label>
+                            <select class="form-select bg-light border">
+                                <option>Baño Medicado + Corte de Uñas</option>
+                                <option>Corte de Pelo según Estándar de Raza</option>
+                                <option>Spa Completo (Aromaterapia + Cepillado dental)</option>
+                            </select>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Selecciona el día</label>
+                                <input type="date" class="form-control bg-light border appointment-date" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Selecciona la hora</label>
+                                <select class="form-select bg-light border" required>
+                                    <option value="" disabled selected>Horarios disponibles</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:30">10:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:30">03:30 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit"
+                            class="btn btn-warning text-white w-100 py-2 fw-bold rounded-3 mt-2 shadow-sm">
+                            <i class="bi bi-calendar-check me-1"></i> Confirmar Turno en Spa
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAuth" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content rounded-4 border-0 shadow-lg overflow-hidden">
+
+                <div class="modal-header p-0 border-0 bg-light">
+                    <ul class="nav nav-tabs w-100 border-0" id="authTabs" role="tablist">
+                        <li class="nav-item flex-fill text-center" role="presentation">
+                            <button class="nav-link w-100 py-3 fw-bold border-0 text-success active" id="tab-login"
+                                data-bs-toggle="tab" data-bs-target="#panel-login" type="button" role="tab"
+                                aria-controls="panel-login" aria-selected="true">
+                                <i class="bi bi-box-arrow-in-right me-1"></i> Ingresar
+                            </button>
+                        </li>
+                        <li class="nav-item flex-fill text-center" role="presentation">
+                            <button class="nav-link w-100 py-3 fw-bold border-0 text-muted" id="tab-registro"
+                                data-bs-toggle="tab" data-bs-target="#panel-registro" type="button" role="tab"
+                                aria-controls="panel-registro" aria-selected="false">
+                                <i class="bi bi-person-plus-fill me-1"></i> Registrarse
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="modal-body p-4 bg-white">
+                    <div class="tab-content" id="authTabsContent">
+
+                        <div class="tab-pane fade show active" id="panel-login" role="tabpanel"
+                            aria-labelledby="tab-login">
+                            <div class="text-center mb-4">
+                                <div
+                                    class="text-success fs-3 fw-bold d-flex align-items-center justify-content-center gap-2 mb-1">
+                                    <i class="bi bi-heart-pulse-fill"></i> Huellitas Felices
+                                </div>
+                                <h5 class="fw-bold text-dark">¡Qué bueno verte de vuelta!</h5>
+                                <p class="text-muted small">Ingresa tus credenciales para acceder a tu perfil.</p>
+                            </div>
+                            <form id="loginUsuario">
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold text-dark">Correo Electrónico</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0 text-muted"><i
+                                                class="bi bi-envelope"></i></span>
+                                        <input type="email" id="loginEmail" class="form-control bg-light border-start-0"
+                                            placeholder="correo@ejemplo.com" required>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label small fw-bold text-dark">Contraseña</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0 text-muted"><i
+                                                class="bi bi-lock"></i></span>
+                                        <input type="password" id="loginPassword"
+                                            class="form-control bg-light border-start-0" placeholder="••••••••"
+                                            required>
+                                    </div>
+                                </div>
+                                <button type="submit"
+                                    class="btn btn-success w-100 py-2.5 fw-bold rounded-3 shadow-sm">Iniciar
+                                    Sesión</button>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="panel-registro" role="tabpanel" aria-labelledby="tab-registro">
+                            <div class="text-center mb-4">
+                                <div
+                                    class="text-success fs-3 fw-bold d-flex align-items-center justify-content-center gap-2 mb-1">
+                                    <i class="bi bi-heart-pulse-fill"></i> Huellitas Felices
+                                </div>
+                                <h5 class="fw-bold text-dark">Únete a la Fundación</h5>
+                                <p class="text-muted small">Regístrate para agendar citas y comprar en el Pet Shop.</p>
+                            </div>
+                            <form id="registroUsuario">
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold text-dark">Nombre Completo</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0 text-muted"><i
+                                                class="bi bi-person"></i></span>
+                                        <input type="text" id="registroNombre"
+                                            class="form-control bg-light border-start-0" placeholder="Ej. Adonis"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold text-dark">Correo Electrónico</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0 text-muted"><i
+                                                class="bi bi-envelope"></i></span>
+                                        <input type="email" id="registroEmail"
+                                            class="form-control bg-light border-start-0" placeholder="nombre@correo.com"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label small fw-bold text-dark">Contraseña</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0 text-muted"><i
+                                                class="bi bi-lock"></i></span>
+                                        <input type="password" id="registroPassword"
+                                            class="form-control bg-light border-start-0"
+                                            placeholder="Mínimo 6 caracteres" required>
+                                    </div>
+                                </div>
+                                <button type="submit"
+                                    class="btn btn-success w-100 py-2.5 fw-bold rounded-3 shadow-sm">Crear Cuenta
+                                    Nueva</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5 mt-auto">
+        <div class="container text-center text-md-start">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <h5
+                        class="text-success fw-bold d-flex align-items-center gap-2 justify-content-center justify-content-md-start mb-3">
+                        <i class="bi bi-heart-pulse-fill"></i> Huellitas Felices
+                    </h5>
+                    <p class="text-white-50 small mb-0">
+                        Transformando el abandono en segundas oportunidades de vida. Rescate, rehabilitación y adopción
+                        responsable en Guayaquil.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h5 class="fw-bold mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled mb-0 small class-enlaces-footer">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="nosotros.html" class="text-white-50 text-decoration-none">Nosotros</a>
+                        </li>
+                        <li class="mb-2"><a href="servicios.html"
+                                class="text-white-50 text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="adopcion.html"
+                                class="text-white-50 text-decoration-none">Adóptanos</a></li>
+                        <li class="mb-0"><a href="petshop.html" class="text-white-50 text-decoration-none">Pet Shop</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <p class="text-white-50 small mb-2"><i class="bi bi-geo-alt me-1"></i> Av. Francisco de Orellana,
+                        Guayaquil</p>
+                    <p class="text-white-50 small mb-0"><i class="bi bi-telephone me-1"></i> +593 991953147</p>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center text-white-50 small">
+                <p class="mb-0">&copy; 2026 Huellitas Felices. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/huellitas-storage.js"></script>
+    <script>
+        document.querySelectorAll('.appointment-date').forEach(i => i.min = new Date().toISOString().split('T')[0]);
+
+        async function enviarCita(modalId, tipo, petInputId) {
+            const usuario = JSON.parse(sessionStorage.getItem('usuarioHuellitas'));
+            if (!usuario) {
+                bootstrap.Modal.getInstance(document.getElementById(modalId))?.hide();
+                new bootstrap.Modal(document.getElementById('modalAuth')).show();
+                Swal.fire('Acceso requerido', 'Inicia sesión para agendar una cita.', 'warning');
+                return;
+            }
+            const modal = document.getElementById(modalId);
+            const mascota = document.getElementById(petInputId).value.trim();
+            const fecha = modal.querySelector('.appointment-date').value;
+            const horaSelect = modal.querySelector('select[required]');
+            const hora = horaSelect ? horaSelect.value : '';
+            if (!mascota || !fecha || !hora) {
+                Swal.fire('Campos incompletos', 'Completa todos los campos requeridos.', 'warning');
+                return;
+            }
+            const citaData = { usuarioId: usuario.id, usuarioNombre: usuario.nombre, tipo, mascota, fecha, hora };
+            let exito = false;
+            try {
+                Swal.showLoading();
+                const res = await fetch(`${API_URL}/citas`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(citaData) });
+                if (res.ok) exito = true;
+            } catch {}
+            if (!exito) {
+                const db = JSON.parse(localStorage.getItem('huellitasDB')) || {};
+                db.citas = db.citas || [];
+                db.citas.push({ ...citaData, id: Date.now().toString() });
+                localStorage.setItem('huellitasDB', JSON.stringify(db));
+                exito = true;
+            }
+            bootstrap.Modal.getInstance(document.getElementById(modalId))?.hide();
+            Swal.fire({ title: '¡Cita Agendada!', html: `<strong>${tipo}</strong> para <strong>${mascota}</strong><br>Fecha: <strong>${fecha}</strong> a las <strong>${hora}</strong>`, icon: 'success', confirmButtonColor: '#198754' });
+        }
+
+        document.querySelector('#modalConsulta form').addEventListener('submit', e => { e.preventDefault(); enviarCita('modalConsulta', 'Consulta Médica', 'petNameConsulta'); });
+        document.querySelector('#modalCirugia form').addEventListener('submit', e => { e.preventDefault(); enviarCita('modalCirugia', 'Cirugía Veterinaria', 'petNameCirugia'); });
+        document.querySelector('#modalLaboratorio form').addEventListener('submit', e => { e.preventDefault(); enviarCita('modalLaboratorio', 'Laboratorio Clínico', 'petNameLaboratorio'); });
+        document.querySelector('#modalPeluqueria form').addEventListener('submit', e => { e.preventDefault(); enviarCita('modalPeluqueria', 'Peluquería y Spa', 'petNamePeluqueria'); });
+    </script>
+</body>
+
+</html>
